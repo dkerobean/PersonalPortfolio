@@ -1,0 +1,49 @@
+# Ignore Python bytecode and other temporary files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+*.pyo
+*.pyc
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Python cache files
+*.pyo
+*.pyd
+*.pyd
+
+# Ignore Django migrations
+**/migrations/
+
+# Ignore Next.js build files
+frontend/.next/
+frontend/out/
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Python package files
+backend/.eggs/
+backend/*.egg-info/
+backend/dist/
+backend/build/
+backend/.tox/
+backend/.coverage
+
+# Logs and databases
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+*.env
+
+# Ignore Docker related files
+Dockerfile
+docker-compose.yml
+.dockerignore
