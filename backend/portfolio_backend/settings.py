@@ -1,3 +1,5 @@
+import os
+
 """
 Django settings for portfolio_backend project.
 
@@ -25,7 +27,8 @@ SECRET_KEY = 'django-insecure-tk$l0w(&qxyy#!edp@3_soucd9c61aaim!ub!mf!4pymix2g&v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -56,9 +59,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:3000",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://127.0.0.1:3000",
+#     os.getenv('FRONTEND_URL')
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'portfolio_backend.urls'
 
